@@ -1,0 +1,219 @@
+/*Input Your Custom CSS Here*/
+
+
+/* Greta group nextwork css start here */
+/* Carousel Wrapper */
+.gg-network-carousel-wrapper {
+    position: relative;
+    padding: 0 50px;
+    margin: 30px 0;
+}
+
+/* Carousel Container */
+.gg-network-carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Carousel Track */
+.gg-network-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+/* Carousel Slide */
+.gg-network-carousel-slide {
+    flex: 0 0 calc(33.333% - 14px);
+    min-width: calc(33.333% - 14px);
+}
+
+.gg-network-carousel-slide .col-lg-12 {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+/* Feature Item - Make it flexbox with fixed height */
+.gg-network-carousel-slide .feature-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Feature Inner Text - Use flexbox to push button to bottom */
+.gg-network-card-fixed-height {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 380px;
+}
+
+/* Paragraph - Allow it to grow and take available space */
+.gg-network-card-fixed-height > p {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+/* Read More Button - Keep at bottom */
+.gg-network-card-fixed-height .feature-readmore-btn {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+/* Navigation Buttons */
+.gg-network-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gg-network-carousel-btn:hover {
+    background: #f8f9fa;
+    border-color: #00457d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gg-network-carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.gg-network-carousel-btn svg {
+    color: #00457d;
+}
+
+.gg-network-prev {
+    left: 0;
+}
+
+.gg-network-next {
+    right: 0;
+}
+
+/* Dots Indicator */
+.gg-network-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.gg-network-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.gg-network-dot:hover {
+    background: #999;
+}
+
+.gg-network-dot.active {
+    background: #00457d;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .gg-network-carousel-slide {
+        flex: 0 0 calc(50% - 10px);
+        min-width: calc(50% - 10px);
+    }
+
+    .gg-network-carousel-wrapper {
+        padding: 0 45px;
+    }
+
+    .gg-network-carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gg-network-carousel-slide {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .gg-network-carousel-track {
+        gap: 15px;
+    }
+
+    .gg-network-carousel-wrapper {
+        padding: 0 40px;
+    }
+
+    .gg-network-carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .gg-network-carousel-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .gg-network-carousel-wrapper {
+        padding: 0 35px;
+    }
+
+    .gg-network-carousel-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .gg-network-prev {
+        left: -5px;
+    }
+
+    .gg-network-next {
+        right: -5px;
+    }
+}
+
+/* Greta group nextwork css ends  here */
+
+
+.plus {
+    font-size: 48px;
+    color: white;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 575px) {
+    .plus {
+        font-size: 26px;
+        color: white;
+        
+    }
+    .countup-text {
+        text-align: center;
+    }
+}
+
+.counter-up-align-center {
+    justify-content: center;
+}

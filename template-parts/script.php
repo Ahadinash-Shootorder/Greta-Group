@@ -1,0 +1,11 @@
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.animate.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.meanmenu.min.js"></script>
+<script src="js/custom.js"></script>

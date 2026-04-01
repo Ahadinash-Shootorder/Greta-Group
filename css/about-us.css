@@ -1,0 +1,538 @@
+/* About hero css starts here */
+.custom-about-body {
+    background-color: #f5f7fa;
+
+}
+
+.custom-about-section {
+    
+}
+
+.custom-about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.custom-about-left-box {
+    background: white;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+}
+
+.custom-about-subtitle {
+    color: #00457d;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.custom-about-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.custom-about-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    /* text-align: justify; */
+}
+
+.custom-about-right-box {
+    /* background: white; */
+    border-radius: 12px;
+    /* overflow: hidden; */
+}
+
+.custom-about-image-wrapper {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.custom-about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-about-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+
+}
+
+.custom-about-stat-box {
+    padding: 10px 20px;
+    /* text-align: center; */
+    border-radius: 16px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.custom-about-stat-box:nth-child(2n) {
+    border-right: none;
+}
+
+.custom-about-stat-box:nth-child(3),
+.custom-about-stat-box:nth-child(4) {
+    border-bottom: none;
+}
+
+.custom-about-stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    display: block;
+
+}
+
+.custom-about-stat-label {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .custom-about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .custom-about-title {
+        font-size: 36px;
+    }
+
+    .custom-about-left-box {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-about-body {
+        padding: 40px 15px;
+    }
+
+    .custom-about-title {
+        font-size: 28px;
+    }
+
+    .custom-about-left-box {
+        padding: 30px 20px;
+    }
+
+    .custom-about-stat-number {
+        font-size: 36px;
+    }
+
+    .custom-about-stat-box {
+        padding: 30px 20px;
+    }
+
+    .custom-about-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-about-stat-box {
+        border-right: none;
+    }
+
+    .custom-about-stat-box:not(:last-child) {
+        border-bottom: 1px solid #e8e8e8;
+    }
+}
+
+/* About hero css ends here */
+
+/* About Mission Vission CSS starts here */
+.custom-vision-section {
+    
+}
+
+.custom-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.custom-vision-card {
+   background-color: #f5f7fa;  
+    padding: 40px 35px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.custom-vision-label {
+    color: #00457d;
+    font-weight: 800;
+    font-size: 16px;
+
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.custom-vision-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.custom-vision-description {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .custom-vision-title {
+        font-size: 26px;
+    }
+
+    .custom-vision-card {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-vision-section {
+        padding: 40px 15px;
+    }
+
+    .custom-vision-title {
+        font-size: 22px;
+    }
+
+    .custom-vision-card {
+        padding: 25px 20px;
+    }
+
+    .custom-vision-description {
+        font-size: 14px;
+    }
+}
+
+/* About Mission Vission CSS ends here */
+
+
+/* =========================================================================== */
+
+
+/*  Timeline section css starts here */
+.timeline-section-parent-section {
+    background-color: #f5f7fa;
+   
+}
+
+#timeline-section-process {
+  /* margin-bottom: 40px; */
+  height: 590px;
+ 
+}
+
+#timeline-section-process .timeline-section-section-heading {
+    width: 100%;
+}
+
+#timeline-section-process .timeline-section-section-heading h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.timline-section-main-container {
+    margin-top: 96px;
+    
+}
+
+@media (max-width: 600px) {
+
+  .timline-section-main-container {
+    margin-top: 40px;
+}
+
+}
+
+.timeline-section-steps-timeline {
+    overflow: visible;
+    /* overflow-x: auto; */
+    /* overflow-y: visible; */
+    /* overflow-y: auto; */
+    display: flex;
+    
+}
+
+.timeline-section-steps-pane img {
+  height: 100px;
+  margin-top: 18px;
+  -ms-transform: skewX(-15deg);
+  -webkit-transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+}
+
+.timeline-section-pane-warp {
+  height: 140px;
+  width: 25px;
+  margin-left: 20%;
+  margin-top: 20px;
+  -ms-transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+  -o-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+}
+
+.timeline-section-steps-pane {
+  height: 140px;
+  width: 140px;
+  margin-left: 30px;
+  box-shadow: 7px 0px 5px #bcbcbc;
+}
+
+.timeline-section-inverted-pane-warp {
+  height: 140px;
+  width: 25px;
+  margin-left: 20%;
+  -ms-transform: skewX(-15deg);
+  -webkit-transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+}
+
+.timeline-section-inverted-steps-pane {
+  height: 140px;
+  width: 140px;
+  background: #bcbcbc;
+  margin-left: 30px;
+  box-shadow: 7px 0px 5px #bcbcbc;
+}
+
+.timeline-section-inverted-steps-pane p {
+  -ms-transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+  -o-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+  padding: 20px 10px 10px 10px;
+  color: black;
+  font-weight:600;
+  font-size: 18px;
+}
+
+.timeline-section-end-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -10px;
+  }
+
+  
+@media(min-width: 900px) {
+  .timeline-section-steps-timeline {
+    border-top: 5px double #fc6429;
+    padding-top: 32px;
+    margin-top: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    /* overflow: visible; */
+    
+  }
+  .timeline-section-steps-one,
+  .timeline-section-steps-two,
+  .timeline-section-steps-three,
+  .timeline-section-steps-four,
+  .timeline-section-steps-five,
+  .timeline-section-steps-six {
+    float: left;
+    width: 20%;
+    z-index: 10;
+    margin-top: -105px;
+  }
+  .timeline-section-step-wrap {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    margin-left: 39%;
+    border: 2px solid #fc6429;
+  }
+  .timeline-section-verticle-line {
+    position: absolute;
+  
+    height: 57px;
+    width: 5px;
+    margin-left: 10px;
+    marker-top: 10px;
+  }
+  .timeline-section-steps-stops {
+    height: 25px;
+    width: 25px;
+    margin: 11px 10.1px;
+    border-radius: 50%;
+    background: #fc6429;
+  }
+  .timeline-section-end-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -10px;
+  }
+  .timeline-section-inverted-end-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 11.1%;
+  }
+}
+
+@media(max-width: 899px) {
+  #timeline-section-process .container-fluid {
+    width: 50%;
+    
+  }
+  #timeline-section-process {
+    height: 1750px;
+  }
+  .timeline-section-steps-timeline {
+    border-left: 5px double #fc6429;
+    margin-left: 35px;
+    flex-direction: column;
+  }
+  .timeline-section-steps-one,
+  .timeline-section-steps-two,
+  .timeline-section-steps-three,
+  .timeline-section-steps-four,
+  .timeline-section-steps-five,
+  .timeline-section-steps-six {
+    margin-left: -25px;
+  }
+  .timeline-section-step-wrap,
+  .timeline-section-steps-stops {
+    float: left;
+  }
+  .timeline-section-steps-timeline {
+    border-left: 2px solid #ff4400;
+    margin-left: 30px;
+  }
+  .timeline-section-pane-warp {
+    margin-left: 30%;
+  }
+  .timeline-section-inverted-pane-warp {
+    margin-left: 30%;
+  }
+  .timeline-section-verticle-line {
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .timeline-section-steps-stops {
+    height: 25px;
+    width: 25px;
+    margin: 11px 10px;
+    border-radius: 50%;
+    background: #fc6429;
+  }
+  .timeline-section-step-wrap {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    margin-top: 125px;
+    margin-left: -2px;
+    border: 2px solid #fc6429;
+  }
+  .timeline-section-end-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 17px;
+  }
+  .timeline-section-inverted-end-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 288px;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  #timeline-section-process .container-fluid {
+    width: 90%;
+        
+
+  }
+  #timeline-section-process {
+    height: 2250px;
+  }
+
+  .timeline-section-steps-timeline h3 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+}
+
+/* @media (max-width: 400px) {
+  #timeline-section-process {
+    height: 1750px;
+  }
+
+  .timeline-section-verticle-line {
+    width: 105px;
+
+  }
+} */
+
+.timeline-section-back-orange {
+  background: #fc6429;
+}
+
+.timeline-section-back-blue {
+  background: rgb(59, 37, 132);
+}
+
+/* Timeline section css ends here */

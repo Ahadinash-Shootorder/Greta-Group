@@ -1,0 +1,28 @@
+<section class="industry-page-hero">
+    <div class="container">
+        <!-- Mobile Image -->
+        <img 
+            src="img/banner/kusum-metal-mob-banner.webp" 
+            alt="Hero Banner Mobile" 
+            class="industry-page-hero-image industry-page-hero-image-mobile"
+        >
+        
+        <!-- Desktop Image -->
+        <img 
+            src="img/banner/kusum-metal-desk-banner.webp" 
+            alt="Hero Banner Desktop" 
+            class="industry-page-hero-image industry-page-hero-image-desktop"
+        >
+        
+        <!-- Black Overlay -->
+        <div class="industry-page-hero-overlay"></div>
+        
+        <!-- Content -->
+        <div class="industry-page-hero-content">
+            <div class="industry-page-hero-title-wrapper">
+                <h1 class="industry-page-hero-title">Kusum Metals (P) Ltd</h1>
+                <p class="industry-page-hero-subtitle">Pioneering Metal Recycling Excellence Since 1996</p>
+            </div>
+        </div>
+    </div>
+</section>
