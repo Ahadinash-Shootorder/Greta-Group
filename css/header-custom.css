@@ -1,0 +1,82 @@
+/* Custom Header Black Layout */
+
+/* Main Header Section */
+.hd-sec {
+    background: #000000 !important;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+    min-height: 100px;
+}
+
+/* Main Navigation Links */
+.main-menu ul li a {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 35px 16px;
+}
+
+.main-menu ul li a:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Dropdown Menu */
+.main-menu ul ul {
+    background: #000000 !important;
+    border-top: 2px solid #ffffff !important;
+}
+
+.main-menu ul ul li a {
+    color: #ffffff !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.main-menu ul ul li a:hover {
+    color: #ffffff !important;
+    background: #333333 !important;
+}
+
+/* Dropdown Arrow */
+.main-menu li.has-children-menu::before {
+    color: #ffffff !important;
+}
+
+/* Sticky Header */
+.hd-sec.sticky_menu {
+    background: #000000 !important;
+}
+
+/* Search Icon */
+.search-bar-icon span i {
+    color: #ffffff !important;
+}
+
+/* Logo Container - Removed filter to match footer display */
+.logo img {
+    height: 80px !important;
+    width: auto !important;
+    max-height: none !important;
+    padding: 5px 0;
+}
+
+/* Logo Container Hover */
+.logo:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Mobile Menu */
+.mean-container .mean-bar {
+    background: #000000 !important;
+}
+
+.mean-container .mean-nav ul li a {
+    color: #ffffff !important;
+    border-top: 1px solid #333 !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.mean-container .mean-nav ul li a:hover {
+    background: #333333 !important;
+    color: #ffffff !important;
+}

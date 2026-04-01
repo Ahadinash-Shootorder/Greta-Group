@@ -45,7 +45,7 @@
             <!-- Logo Start -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8">
                 <div class="logo">
-                    <a href="index.php"><img src="img/greta-black-logo.png" alt=""/></a>
+                    <a href="index.php"><img src="img/greta-white-logo.png" alt=""/></a>
                 </div>
             </div>
             <!-- Logo End -->
@@ -55,11 +55,11 @@
                 <div class="menu">
                     <?php require_once('template-parts/header/menu.php'); ?>
                     <!-- Menu Search Bar Start -->
-                    <div class="search-bar-icon">
+                    <!-- <div class="search-bar-icon">
                         <div class="site-search">
                             <span data-toggle="dropdown"><i class="icofont-search-2"></i></span>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Menu Search Bar End -->
                 </div>
             </div>
