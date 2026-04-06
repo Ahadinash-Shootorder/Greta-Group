@@ -2,7 +2,7 @@
 <div class="slider">
     <div class="all-slide owl-item">
         <!-- Slider Single Item Start -->
-        <div class="single-slide" style="background-image:url(img/home/banner-1.webp);">
+        <div class="single-slide" style="background-image:url(img/home/HomePageBanner_4.png); background-color: rgba(0, 0, 0, 0.85);">
             <div class="slider-wrapper">
                 <div class="slider-text">
                     <div class="slider-caption">
@@ -13,7 +13,7 @@
         </div>
         <!-- Slider Single Item End -->
         <!-- Slider Second Item Start -->
-        <div class="single-slide" style="background-image:url(img/home/banner-2.webp);">
+        <div class="single-slide" style="background-image:url(img/home/HomePageBanner1.webp); background-color: rgba(0, 0, 0, 0.85);">
             <div class="slider-wrapper">
                 <div class="slider-text">
                     <div class="slider-caption">
