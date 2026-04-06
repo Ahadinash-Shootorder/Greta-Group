@@ -47,12 +47,19 @@
     flex-direction: column;
     flex: 1;
     min-height: 380px;
+    padding-top: 0px !important;
+    /* Reduced padding from 30px */
+}
+
+/* Reduce margin-top of heading inside the card */
+.gg-network-card-fixed-height h2 {
+    margin-top: 0px !important;
 }
 
 /* Paragraph - Allow it to grow and take available space */
-.gg-network-card-fixed-height > p {
+.gg-network-card-fixed-height>p {
     flex: 1;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 /* Read More Button - Keep at bottom */
@@ -207,8 +214,9 @@
     .plus {
         font-size: 26px;
         color: white;
-        
+
     }
+
     .countup-text {
         text-align: center;
     }
@@ -216,4 +224,116 @@
 
 .counter-up-align-center {
     justify-content: center;
+}
+
+/* Product Lines Custom CSS */
+.product-lines-sec {
+    background: #2F2F2F;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.product-lines-title {
+    text-align: center;
+    color: white;
+    font-size: 54px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.product-lines-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.product-lines-card {
+    width: 430px;
+    height: 383px;
+    position: relative;
+    background: linear-gradient(180deg, #7F6434 0%, rgba(113, 89, 48, 0.06) 100%);
+    box-shadow: 2px 4px 19px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 25px;
+    transition: transform 0.3s ease;
+}
+
+.product-lines-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-lines-icon-box {
+    width: 114px;
+    height: 114px;
+    background: #715930;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 53px;
+    margin-bottom: 30px;
+}
+
+.product-lines-icon-box.large {
+    width: 125px;
+    height: 125px;
+    margin-top: 42px;
+    margin-bottom: 41px;
+}
+
+.product-lines-icon-box img {
+    max-width: 73px;
+    max-height: 73px;
+    object-fit: contain;
+}
+
+.white-icon {
+    filter: brightness(0) invert(1);
+}
+
+.product-lines-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.product-lines-card h2,
+.product-lines-card h2 a {
+    text-align: center;
+    color: white !important;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    text-decoration: none;
+}
+
+.product-lines-card h2 a:hover {
+    color: #f1f1f1 !important;
+}
+
+.product-lines-card p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
 }
