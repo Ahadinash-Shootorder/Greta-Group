@@ -13,7 +13,7 @@
         </div>
         <!-- Slider Single Item End -->
         <!-- Slider Second Item Start -->
-        <div class="single-slide" style="background-image:url(img/home/HomePageBanner1.webp); background-color: rgba(0, 0, 0, 0.85);">
+        <div class="single-slide" style="background-image:url(img/home/HomePageBanner_2.webp); background-color: rgba(0, 0, 0, 0.85);">
             <div class="slider-wrapper">
                 <div class="slider-text">
                     <div class="slider-caption">
