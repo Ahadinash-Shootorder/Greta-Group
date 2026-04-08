@@ -1,347 +1,447 @@
+<?php
+/**
+ * Greta Global Presence Section
+ */
+
+$feature_services = [
+    [
+        'title' => 'Global Metcorp Ltd',
+        'subtitle' => 'Global Ferrous Scrap Trading',
+        'desc' => 'An international trading house specializing in ferrous scrap, supporting steel production worldwide with dependable raw material supply.',
+        'image' => 'img/gg-network/metcorp.webp',
+        'link' => 'https://www.globalmetcorp.com/'
+    ],
+    [
+        'title' => 'Greta Metal Pte Ltd',
+        'subtitle' => 'Commodities & Steel Trading (Asia)',
+        'desc' => 'Based in Singapore, this entity trades key commodities like semi-finished steel products and essential ferrous scrap and mineral ores.',
+        'image' => 'img/gg-network/metal-pte.webp',
+        'link' => 'greta-metal-pte-ltd.php'
+    ],
+    [
+        'title' => 'Global Ardour Recycling',
+        'subtitle' => 'Critical Mineral Exploration & Development',
+        'desc' => 'Focuses on mining and exploration assets, particularly for critical minerals like Lithium, Gold, and Rare Earth Elements in Australia.',
+        'image' => 'img/gg-network/ardour.webp',
+        'link' => 'https://globalardour.co.uk/'
+    ],
+    [
+        'title' => 'Greta Energy Ltd',
+        'subtitle' => 'Sustainable Power Generation & Steel',
+        'desc' => 'Operates a 15 MW biomass-based power plant, and is developing an integrated green steel plant (DRI/Billet) in India.',
+        'image' => 'img/gg-network/energy.webp',
+        'link' => 'https://www.gretaenergy.in/'
+    ],
+    [
+        'title' => 'Shriram Food Industry Ltd',
+        'subtitle' => 'Rice Milling and Export',
+        'desc' => 'A leading manufacturer and exporter of various rice types, operating an integrated milling and trading model for global agri-commodity markets.',
+        'image' => 'img/gg-network/shriram-food.webp',
+        'link' => 'https://www.shriramfood.com/'
+    ],
+    [
+        'title' => 'Greta Minerals Australia',
+        'subtitle' => 'Critical Mineral Exploration & Development',
+        'desc' => 'Focuses on mining and exploration assets, particularly for critical minerals like Lithium, Gold, and Rare Earth Elements in Australia.',
+        'image' => 'img/gg-network/mineral.webp',
+        'link' => 'https://www.gretaminerals.com/'
+    ],
+    [
+        'title' => 'KUSUM METALS PVT LTD',
+        'subtitle' => 'Pioneering Metal Recycling',
+        'desc' => 'Founded in 1996, we are the pioneering core of the Greta Group, driving industrial sustainability from India. We specialize in full-cycle recycling of ferrous & non-ferrous scrap.',
+        'image' => 'img/gg-network/metal-dmcc.webp',
+        'link' => 'kusum-metals-pvt-ltd.php'
+    ]
+];
+?>
+
+<style>
+    /* Feature Section Styles - Based on Provided Design */
+    .feature-sec-v2 {
+        width: 100%;
+        min-height: 80px;
+        position: relative;
+        /* border-radius: 27px,; */
+        background: linear-gradient(182.7deg, #796033, #34322f);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+        box-sizing: border-box;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+
+    .feature-sec-v2 .sec-title h1 {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 40px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .gg-carousel-wrapper {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 44px;
+        box-sizing: border-box;
+        position: relative;
+        gap: 16px;
+    }
+
+    .gg-carousel-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .gg-carousel-track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        gap: 24px;
+    }
+
+    .gg-carousel-slide {
+        flex: 0 0 calc((100% - (24px * 2)) / 3);
+        min-width: 0;
+    }
+
+    .gg-service-card {
+        height: 750px;
+        width: 100%;
+        position: relative;
+        box-shadow: 2px 4px 19px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        background-color: #fff;
+        border: 8px solid #fff;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gg-card-thumb {
+        width: 100%;
+        height: 380px;
+        background-color: #f8f8f8;
+        overflow: hidden;
+    }
+
+    .gg-card-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gg-service-card:hover .gg-card-thumb img {
+        transform: scale(1.05);
+    }
+
+    .gg-card-content {
+        flex: 1;
+        padding: 30px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .gg-card-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .gg-card-subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        color: #003c70;
+        line-height: 1.3;
+    }
+
+    .gg-card-desc {
+        font-size: 16px;
+        font-weight: 400;
+        color: #3a3a3a;
+        line-height: 1.6;
+    }
+
+    .gg-read-more-btn {
+        margin-top: auto;
+        width: 100%;
+        background-color: #003c70;
+        border-radius: 5px;
+        padding: 14px 10px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .gg-read-more-btn a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 20px;
+        display: block;
+    }
+
+    .gg-read-more-btn:hover {
+        background-color: #002a4e;
+    }
+
+    /* Navigation Buttons */
+    .gg-nav-btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #fff;
+        border: none;
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
+
+    .gg-nav-btn:hover {
+        background: #f0f0f0;
+        transform: translateY(-50%) scale(1.05);
+    }
+
+    .gg-btn-prev {
+        left: 10px;
+    }
+
+    .gg-btn-next {
+        right: 10px;
+    }
+
+    .gg-nav-btn svg {
+        width: 24px;
+        height: 24px;
+        stroke: #003c70;
+    }
+
+    .gg-dots-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .gg-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: all 0.3s ease;
+    }
+
+    .gg-dot.active {
+        background: #fff;
+        width: 24px;
+        border-radius: 10px;
+    }
+
+    /* Responsive Overrides */
+    @media (max-width: 1200px) {
+        .gg-carousel-slide {
+            flex: 0 0 calc((100% - 24px) / 2);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .gg-carousel-slide {
+            flex: 0 0 100%;
+        }
+
+        .gg-service-card {
+            height: auto;
+            min-height: 600px;
+        }
+
+        .gg-card-thumb {
+            height: 250px;
+        }
+
+        .gg-carousel-wrapper {
+            padding: 0 20px;
+        }
+
+        .gg-nav-btn {
+            display: none;
+        }
+    }
+</style>
+
 <!-- feature Section Start -->
-<div class="feature-sec pt-100 pb-70">
+<div class="feature-sec-v2">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12">
                 <div class="sec-title">
                     <h1>Greta Global Presence</h1>
                 </div>
             </div>
         </div>
-        
-        <!-- Carousel Container -->
-        <div class="gg-network-carousel-wrapper">
-            <button class="gg-network-carousel-btn gg-network-prev" aria-label="Previous">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M15 18l-6-6 6-6"/>
-                </svg>
-            </button>
-            
-            <div class="gg-network-carousel-container">
-                <div class="gg-network-carousel-track">
-                    
-                    <!-- Card 1 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item ">
-                                <div class="feature-thumb">
-                                    <a href="global-metcorp-ltd.php"><img src="img/gg-network/metcorp.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/piggy-bank.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">Global Metcorp Ltd</a></h2>
-                                            <span>Global Ferrous Scrap Trading</span>
-                                        </div>
-                                    </div>
-                                    <p>An international trading house specializing in ferrous scrap, supporting steel production worldwide with dependable raw material supply.</p>
-                                    <div class="feature-readmore-btn">
-                                        <!--<a href="global-metcorp-ltd.php" target="_blank" >Read More</a>-->
-                                        <a href="https://www.globalmetcorp.com/" target="_blank" >Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 2 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item">
-                                <div class="feature-thumb">
-                                    <a href="greta-metal-pte-ltd.php"><img src="img/gg-network/metal-pte.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/money.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">Greta Metal Pte Ltd</a></h2>
-                                            <span>Commodities & Steel Trading (Asia)</span>
-                                        </div>
-                                    </div>
-                                    <p>Based in Singapore, this entity trades key commodities like semi-finished steel products and essential ferrous scrap and mineral ores.</p>
-                                    <div class="feature-readmore-btn">
-                                        <a href="greta-metal-pte-ltd.php" target="_blank" >Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 3 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item">
-                                <div class="feature-thumb">
-                                    <a href="ardour-world-ltd.php"><img src="img/gg-network/ardour.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/customer-support.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">Global Ardour Recycling </a></h2>
-                                            <span>Critical Mineral Exploration & Development</span>
-                                        </div>
-                                    </div>
-                                    <p>Focuses on mining and exploration assets, particularly for critical minerals like Lithium, Gold, and Rare Earth Elements in Australia.</p>
-                                    <div class="feature-readmore-btn">
-                                        <!--<a href="ardour-world-ltd.php" target="_blank" >Read More</a>-->
-                                        <a href="https://globalardour.co.uk/" target="_blank" >Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 4 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item">
-                                <div class="feature-thumb">
-                                    <a href="greta-energy-ltd.php"><img src="img/gg-network/energy.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/piggy-bank.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">Greta Energy Ltd</a></h2>
-                                            <span>Sustainable Power Generation & Steel</span>
-                                        </div>
-                                    </div>
-                                    <p>Operates a 15 MW biomass-based power plant feeding the grid, and is developing an integrated green steel plant (DRI/Billet) in India.</p>
-                                    <div class="feature-readmore-btn">
-                                        <!--<a href="greta-energy-ltd.php" target="_blank" >Read More</a>-->
-                                        <a href="https://www.gretaenergy.in/" target="_blank" >Read More</a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 5 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item">
-                                <div class="feature-thumb">
-                                    <a href="shriram-food-industry-ltd.php"><img src="img/gg-network/shriram-food.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/money.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">Shriram Food Industry Ltd</a></h2>
-                                            <span>Rice Milling and Export</span>
-                                        </div>
-                                    </div>
-                                    <p>A leading manufacturer and exporter of various rice types, operating an integrated milling and trading model for global agri-commodity markets.</p>
-                                    <div class="feature-readmore-btn">
-                                        <!--<a href="shriram-food-industry-ltd.php" target="_blank" >Read More</a>-->
-                                        <a href="https://www.shriramfood.com/" target="_blank" >Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 6 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item">
-                                <div class="feature-thumb">
-                                    <a href="greta-minerals-pte-ltd.php"><img src="img/gg-network/mineral.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/customer-support.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">Greta Minerals Australia</a></h2>
-                                            <span>Critical Mineral Exploration & Development</span>
-                                        </div>
-                                    </div>
-                                    <p>Focuses on mining and exploration assets, particularly for critical minerals like Lithium, Gold, and Rare Earth Elements in Australia.</p>
-                                    <div class="feature-readmore-btn">
-                                        <a href="https://www.gretaminerals.com/" target="_blank" >Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 7 -->
-                    <div class="gg-network-carousel-slide">
-                        <div class="col-lg-12 d-flex">
-                            <div class="feature-item">
-                                <div class="feature-thumb">
-                                    <a href="kusum-metals-pvt-ltd.php"><img src="img/gg-network/metal-dmcc.webp" alt=""/></a>
-                                </div>
-                                <div class="feature-inner-text gg-network-card-fixed-height">
-                                    <!-- <div class="feature_icon">
-                                        <img src="img/icon/piggy-bank.png" alt=""/>
-                                    </div> -->
-                                    <div class="media-body">
-                                        <div class="feature-inner-meta">
-                                            <h2><a href="service-details.php">KUSUM METALS PVT LTD</a></h2>
-                                            <!-- <span>Commodity Trading Hub (Middle East)</span> -->
-                                        </div>
-                                    </div>
-                                    <p>Founded in 1996, we are the pioneering core of the Greta Group, driving industrial sustainability from India. We specialize in the full-cycle recycling of ferrous and non-ferrous scrap, transforming metal waste into essential raw materials for global manufacturers.</p>
-                                    <div class="feature-readmore-btn">
-                                        <!--<a href="kusum-metals-pvt-ltd.php" target="_blank" >Read More</a>-->
-                                        <a href="kusum-metals-pvt-ltd.php" target="_blank" >Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <button class="gg-network-carousel-btn gg-network-next" aria-label="Next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 18l6-6-6-6"/>
-                </svg>
-            </button>
-        </div>
-        
-        <!-- Dots Indicator -->
-        <div class="gg-network-carousel-dots"></div>
     </div>
+
+    <div class="gg-carousel-wrapper">
+        <button class="gg-nav-btn gg-btn-prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M15 18l-6-6 6-6" />
+            </svg>
+        </button>
+
+        <div class="gg-carousel-container">
+            <div class="gg-carousel-track">
+                <?php foreach ($feature_services as $service): ?>
+                    <div class="gg-carousel-slide">
+                        <div class="gg-service-card">
+                            <div class="gg-card-thumb">
+                                <a href="<?php echo $service['link']; ?>" target="_blank">
+                                    <img src="<?php echo $service['image']; ?>" alt="<?php echo $service['title']; ?>" />
+                                </a>
+                            </div>
+                            <div class="gg-card-content">
+                                <h2 class="gg-card-title"><?php echo $service['title']; ?></h2>
+                                <div class="gg-card-subtitle"><?php echo $service['subtitle']; ?></div>
+                                <p class="gg-card-desc"><?php echo $service['desc']; ?></p>
+                                <div class="gg-read-more-btn">
+                                    <a href="<?php echo $service['link']; ?>" target="_blank">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <button class="gg-nav-btn gg-btn-next" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M9 18l6-6-6-6" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="gg-dots-container"></div>
 </div>
-<!-- feature Section End -->
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const track = document.querySelector('.gg-network-carousel-track');
-    const slides = Array.from(document.querySelectorAll('.gg-network-carousel-slide'));
-    const prevBtn = document.querySelector('.gg-network-prev');
-    const nextBtn = document.querySelector('.gg-network-next');
-    const dotsContainer = document.querySelector('.gg-network-carousel-dots');
-    
-    let currentIndex = 0;
-    let slidesPerView = 3;
-    let slideWidth = 100 / slidesPerView;
-    
-    // Calculate total pages
-    const totalPages = Math.ceil(slides.length / slidesPerView);
-    
-    // Create dots
-    function createDots() {
-        dotsContainer.innerHTML = '';
-        for (let i = 0; i < totalPages; i++) {
-            const dot = document.createElement('button');
-            dot.classList.add('gg-network-dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i * slidesPerView));
-            dotsContainer.appendChild(dot);
+    document.addEventListener('DOMContentLoaded', function () {
+        const track = document.querySelector('.gg-carousel-track');
+        const slides = Array.from(document.querySelectorAll('.gg-carousel-slide'));
+        const prevBtn = document.querySelector('.gg-btn-prev');
+        const nextBtn = document.querySelector('.gg-btn-next');
+        const dotsContainer = document.querySelector('.gg-dots-container');
+
+        let currentIndex = 0;
+
+        function getSlidesPerView() {
+            if (window.innerWidth < 768) return 1;
+            if (window.innerWidth < 1200) return 2;
+            return 3;
         }
-    }
-    
-    // Update carousel position
-    function updateCarousel() {
-        const offset = -(currentIndex * slideWidth);
-        track.style.transform = `translateX(${offset}%)`;
-        
-        // Update dots
-        const dots = document.querySelectorAll('.gg-network-dot');
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === Math.floor(currentIndex / slidesPerView));
+
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            const slidesPerView = getSlidesPerView();
+            const totalDots = Math.max(1, slides.length - slidesPerView + 1);
+
+            for (let i = 0; i < totalDots; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('gg-dot');
+                if (i === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateCarousel();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateCarousel() {
+            const slidesPerView = getSlidesPerView();
+            const gap = 24;
+            const containerWidth = document.querySelector('.gg-carousel-container').offsetWidth;
+            const slideWidth = (containerWidth - (gap * (slidesPerView - 1))) / slidesPerView;
+
+            const offset = -(currentIndex * (slideWidth + gap));
+            track.style.transform = `translateX(${offset}px)`;
+
+            // Update dots
+            const dots = document.querySelectorAll('.gg-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+
+            // Update button visibility
+            prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+            prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+
+            const maxIndex = slides.length - slidesPerView;
+            nextBtn.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+            nextBtn.style.pointerEvents = currentIndex >= maxIndex ? 'none' : 'auto';
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
         });
-        
-        // Update button states
-        prevBtn.disabled = currentIndex === 0;
-        nextBtn.disabled = currentIndex >= slides.length - slidesPerView;
-    }
-    
-    // Go to specific slide
-    function goToSlide(index) {
-        currentIndex = Math.max(0, Math.min(index, slides.length - slidesPerView));
-        updateCarousel();
-    }
-    
-    // Next slide
-    function nextSlide() {
-        if (currentIndex < slides.length - slidesPerView) {
-            currentIndex += slidesPerView;
-            if (currentIndex > slides.length - slidesPerView) {
-                currentIndex = slides.length - slidesPerView;
+
+        nextBtn.addEventListener('click', () => {
+            const maxIndex = slides.length - getSlidesPerView();
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateCarousel();
             }
+        });
+
+        // Initial State
+        window.addEventListener('resize', () => {
+            const maxIndex = slides.length - getSlidesPerView();
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+            if (currentIndex < 0) currentIndex = 0;
+            createDots();
             updateCarousel();
-        }
-    }
-    
-    // Previous slide
-    function prevSlide() {
-        if (currentIndex > 0) {
-            currentIndex -= slidesPerView;
-            if (currentIndex < 0) {
-                currentIndex = 0;
-            }
-            updateCarousel();
-        }
-    }
-    
-    // Responsive: Update slides per view
-    function updateSlidesPerView() {
-        if (window.innerWidth < 768) {
-            slidesPerView = 1;
-        } else if (window.innerWidth < 992) {
-            slidesPerView = 2;
-        } else {
-            slidesPerView = 3;
-        }
-        slideWidth = 100 / slidesPerView;
-        
-        // Reset to valid position
-        currentIndex = Math.min(currentIndex, slides.length - slidesPerView);
-        if (currentIndex < 0) currentIndex = 0;
-        
+        });
+
         createDots();
         updateCarousel();
-    }
-    
-    // Event listeners
-    prevBtn.addEventListener('click', prevSlide);
-    nextBtn.addEventListener('click', nextSlide);
-    
-    // Touch/Swipe support
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
-    track.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
+
+        // Touch Support
+        let startX = 0;
+        let isDragging = false;
+
+        track.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
+
+        track.addEventListener('touchend', e => {
+            if (!isDragging) return;
+            const endX = e.changedTouches[0].clientX;
+            const diff = startX - endX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextBtn.click();
+                else prevBtn.click();
+            }
+            isDragging = false;
+        });
     });
-    
-    track.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-    
-    function handleSwipe() {
-        if (touchStartX - touchEndX > 50) {
-            nextSlide();
-        }
-        if (touchEndX - touchStartX > 50) {
-            prevSlide();
-        }
-    }
-    
-    // Initialize
-    updateSlidesPerView();
-    window.addEventListener('resize', updateSlidesPerView);
-});
 </script>
