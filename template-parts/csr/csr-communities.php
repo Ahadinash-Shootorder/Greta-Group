@@ -21,7 +21,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="csr-content-image">
-                    <img src="img/csr/CSR-2nd.webp" alt="CSR Communities" class="img-fluid rounded">
+                    <img src="/img/csr/CSR-2nd.webp" alt="CSR Communities" class="img-fluid rounded">
                 </div>
             </div>
         </div>
