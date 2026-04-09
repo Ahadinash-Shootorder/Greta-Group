@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="css/shriram-food.css">
     <link rel="stylesheet" href="css/csr.css">
     <link rel="stylesheet" href="css/header-custom.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo filemtime('style.css'); ?>">
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

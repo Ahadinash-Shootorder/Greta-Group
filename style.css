@@ -203,199 +203,244 @@
     }
 }
 
-/* Carousel Container */
-.gg-network-carousel-container {
+/* ============================================
+   Greta Global Presence - Feature Service CSS
+   ============================================ */
+
+/* Section Background */
+.feature-sec-v2 {
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+    background: linear-gradient(182.7deg, #796033, #34322f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    width: 100%;
 }
 
-/* Carousel Track */
-.gg-network-carousel-track {
+.feature-sec-v2 .sec-title h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Carousel Wrapper */
+.gg-carousel-wrapper {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 44px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 16px;
 }
 
-/* Carousel Slide */
-.gg-network-carousel-slide {
-    flex: 0 0 calc(33.333% - 14px);
-    min-width: calc(33.333% - 14px);
-}
-
-.gg-network-carousel-slide .col-lg-12 {
+.gg-carousel-container {
     width: 100%;
-    padding: 0;
-    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-/* Feature Item - Make it flexbox with fixed height */
-.gg-network-carousel-slide .feature-item {
+.gg-carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    gap: 24px;
+}
+
+.gg-carousel-slide {
+    flex: 0 0 calc((100% - (24px * 2)) / 3);
+    min-width: 0;
+}
+
+/* Card Styles */
+.gg-service-card {
+    height: 750px;
+    width: 100%;
+    position: relative;
+    box-shadow: 2px 4px 19px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    background-color: #fff;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
-/* Feature Inner Text - Use flexbox to push button to bottom */
-.gg-network-card-fixed-height {
+.gg-card-thumb {
+    width: 100%;
+    height: 380px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.gg-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gg-service-card:hover .gg-card-thumb img {
+    transform: scale(1.05);
+}
+
+.gg-card-content {
+    flex: 1;
+    padding: 30px 24px;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    min-height: 380px;
-    padding-top: 0px !important;
-    /* Reduced padding from 30px */
+    gap: 15px;
 }
 
-/* Reduce margin-top of heading inside the card */
-.gg-network-card-fixed-height h2 {
-    margin-top: 0px !important;
+.gg-card-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
 }
 
-/* Paragraph - Allow it to grow and take available space */
-.gg-network-card-fixed-height>p {
-    flex: 1;
-    margin-bottom: 0px;
+.gg-card-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #003c70;
+    line-height: 1.3;
 }
 
-/* Read More Button - Keep at bottom */
-.gg-network-card-fixed-height .feature-readmore-btn {
+.gg-card-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3a3a3a;
+    line-height: 1.6;
+}
+
+.gg-read-more-btn {
     margin-top: auto;
-    padding-top: 10px;
+    width: 100%;
+    background-color: #003c70;
+    border-radius: 5px;
+    padding: 14px 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.gg-read-more-btn a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+}
+
+.gg-read-more-btn:hover {
+    background-color: #002a4e;
 }
 
 /* Navigation Buttons */
-.gg-network-carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #fff;
-    border: 2px solid #ddd;
+.gg-nav-btn {
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    background: #fff;
+    border: none;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.gg-network-carousel-btn:hover {
-    background: #f8f9fa;
-    border-color: #00457d;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.gg-nav-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-50%) scale(1.05);
 }
 
-.gg-network-carousel-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
+.gg-btn-prev {
+    left: 10px;
 }
 
-.gg-network-carousel-btn svg {
-    color: #00457d;
+.gg-btn-next {
+    right: 10px;
 }
 
-.gg-network-prev {
-    left: 0;
+.gg-nav-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: #003c70;
 }
 
-.gg-network-next {
-    right: 0;
-}
-
-/* Dots Indicator */
-.gg-network-carousel-dots {
+/* Carousel Dots */
+.gg-dots-container {
     display: flex;
-    justify-content: center;
     gap: 10px;
     margin-top: 30px;
 }
 
-.gg-network-dot {
+.gg-dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #ddd;
+    background: rgba(255, 255, 255, 0.3);
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
-.gg-network-dot:hover {
-    background: #999;
+.gg-dot.active {
+    background: #fff;
+    width: 24px;
+    border-radius: 10px;
 }
 
-.gg-network-dot.active {
-    background: #00457d;
-    width: 30px;
-    border-radius: 6px;
-}
-
-/* Responsive Styles */
-@media (max-width: 991px) {
-    .gg-network-carousel-slide {
-        flex: 0 0 calc(50% - 10px);
-        min-width: calc(50% - 10px);
-    }
-
-    .gg-network-carousel-wrapper {
-        padding: 0 45px;
-    }
-
-    .gg-network-carousel-btn {
-        width: 45px;
-        height: 45px;
+/* Responsive - Tablet */
+@media (max-width: 1200px) {
+    .gg-carousel-slide {
+        flex: 0 0 calc((100% - 24px) / 2);
     }
 }
 
-@media (max-width: 767px) {
-    .gg-network-carousel-slide {
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .gg-carousel-slide {
         flex: 0 0 100%;
-        min-width: 100%;
     }
 
-    .gg-network-carousel-track {
-        gap: 15px;
+    .gg-service-card {
+        height: auto;
+        min-height: 600px;
     }
 
-    .gg-network-carousel-wrapper {
-        padding: 0 40px;
+    .gg-card-thumb {
+        height: 250px;
     }
 
-    .gg-network-carousel-btn {
-        width: 40px;
-        height: 40px;
+    .gg-carousel-wrapper {
+        padding: 0 20px;
     }
 
-    .gg-network-carousel-btn svg {
-        width: 20px;
-        height: 20px;
+    .gg-nav-btn {
+        display: none;
     }
 }
 
-@media (max-width: 575px) {
-    .gg-network-carousel-wrapper {
-        padding: 0 35px;
-    }
+/* Greta group network css ends here */
 
-    .gg-network-carousel-btn {
-        width: 35px;
-        height: 35px;
-    }
-
-    .gg-network-prev {
-        left: -5px;
-    }
-
-    .gg-network-next {
-        right: -5px;
-    }
-}
-
-/* Greta group nextwork css ends  here */
 
 
 .plus {
