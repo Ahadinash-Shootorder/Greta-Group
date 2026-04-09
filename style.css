@@ -1,12 +1,205 @@
-/*Input Your Custom CSS Here*/
-
-
-/* Greta group nextwork css start here */
-/* Carousel Wrapper */
-.gg-network-carousel-wrapper {
+/* FAQ Section Custom Styles */
+.faq-section {
+    color: white !important;
     position: relative;
-    padding: 0 50px;
-    margin: 30px 0;
+    overflow: hidden;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="10" cy="50" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="90" cy="30" r="0.5" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+.faq-section .sec-title h1 {
+    color: white !important;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.faq-section .sec-title h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+.faq-section .faq-single h2 {
+    color: white !important;
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.faq-section .faq-single p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.faq-section .faq-single {
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-section .faq-single::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.faq-section .faq-single:hover::before {
+    left: 100%;
+}
+
+.faq-section .faq-single:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.faq-section .media-left .icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.faq-section .faq-single:hover .media-left .icon {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    transform: scale(1.05);
+}
+
+.faq-section .media-left .icon img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.faq-section .media-body {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.faq-section .vedio-inner {
+    position: relative;
+    padding: 20px;
+}
+
+.faq-section .vedio-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+.faq-section .vedio-inner:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+}
+
+.faq-section .vedio-inner::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .faq-section .sec-title h1 {
+        font-size: 40px;
+    }
+    
+    .faq-section .faq-single {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .faq-section .media-left .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    
+    .faq-section .media-left .icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section .sec-title h1 {
+        font-size: 32px;
+    }
+    
+    .faq-section .faq-single {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .faq-section .faq-single h2 {
+        font-size: 18px;
+    }
+    
+    .faq-section .faq-single p {
+        font-size: 14px;
+    }
+    
+    .faq-section .media-left .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+    
+    .faq-section .media-left .icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .faq-section .vedio-inner {
+        padding: 10px;
+        margin-top: 30px;
+    }
 }
 
 /* Carousel Container */

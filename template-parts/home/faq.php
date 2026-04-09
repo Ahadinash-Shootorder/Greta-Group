@@ -1,13 +1,16 @@
 <!-- FAQ Section Start -->
-<div class="faq-section  faq-style1 bg-gray-color pt-100 pb-80">
+<div class="faq-section faq-style1 pt-100 pb-80" style="background: #2F2F2F;">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+                <div class="sec-title text-center text-white mb-5">
+                    <h1>Greta Group: Our Global Journey </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="faq-sec">
-                    <div class="sec-title">
-                        <h1>Greta Group: Our Global Journey </h1>
-                        <!-- <p>We’re on a mission to start a conversation with your customers in this fast connected world. Let’s discover, build and grow your digital business.</p> -->
-                    </div>
                     <div class="faq-single">
                         <div class="media">
                             <div class="media-left">
@@ -47,18 +50,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <div class="vedio-inner">
-                    <img src="img/global-journey-2.webp" alt="">
-                    <!-- <div class="vedio-overly">
-                        <div class="vedio-button">
-                            <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="mfp-iframe vedio-play"><i class="icofont-play"></i></a>
-                        </div>
-                        <span class="video-title"><a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="mfp-iframe">Watch the Video</a></span>
-                    </div> -->
+                    <img src="img/home/global-journey.webp" alt="">
                 </div>
             </div>
         </div>
