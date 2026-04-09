@@ -693,14 +693,14 @@ input:focus {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
 	.slider-text {
-	/* left: 0; */
-	
-	transform: translateX(0%);
-	top: 60%;
-	right: 0;
-	
-}
-    
+		/* left: 0; */
+
+		transform: translateX(0%);
+		top: 60%;
+		right: 0;
+
+	}
+
 }
 
 .slider-caption span.subtitle {
@@ -784,37 +784,37 @@ input:focus {
 
 /* For mobile devices (portrait) */
 @media (max-width: 767px) {
-	
-  .all-slide .owl-controls .owl-prev {
-	  position: absolute;
-	left: 10px !important;
-	transition: all 0.4s ease 0s;
-}
 
-.all-slide .owl-controls .owl-next {
-	right: 10px !important;
-	position: absolute;
-	transition: all 0.4s ease 0s;
-}
+	.all-slide .owl-controls .owl-prev {
+		position: absolute;
+		left: 10px !important;
+		transition: all 0.4s ease 0s;
+	}
 
-.all-slide .owl-controls .owl-prev i,
-.all-slide .owl-controls .owl-next i {
-	background: transparent;
-	color: #ffff;
-	font-size: 20px !important;
-	height: 20px;
-	line-height: 48px;
-	text-align: center;
-	transition: all 0.5s ease-out 0s;
-	width: 8px !important;
-	font-weight: normal;
-}
+	.all-slide .owl-controls .owl-next {
+		right: 10px !important;
+		position: absolute;
+		transition: all 0.4s ease 0s;
+	}
 
-.slider-text li a {
-	
-	padding: 5px 10px !important;
-	
-}
+	.all-slide .owl-controls .owl-prev i,
+	.all-slide .owl-controls .owl-next i {
+		background: transparent;
+		color: #ffff;
+		font-size: 20px !important;
+		height: 20px;
+		line-height: 48px;
+		text-align: center;
+		transition: all 0.5s ease-out 0s;
+		width: 8px !important;
+		font-weight: normal;
+	}
+
+	.slider-text li a {
+
+		padding: 5px 10px !important;
+
+	}
 
 }
 
@@ -981,8 +981,8 @@ input:focus {
 /*
 7.Title Section
 =================*/
-.about-us-sec{
-  background-color: #00457d !important;
+.about-us-sec {
+	background-color: #00457d !important;
 }
 
 .sec-title {
@@ -1000,12 +1000,15 @@ input:focus {
 .sec-title p {
 	margin-bottom: 0;
 }
+
 .about-desc .company-ceo p {
 	color: white;
 }
+
 .about-desc .company-ceo h4 {
 	color: white
 }
+
 .about-desc .company-ceo span {
 	color: white;
 }
@@ -1159,7 +1162,7 @@ input:focus {
 }
 
 .count-up-sec-overlay {
-	background: #00457d;
+	background: #796033;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -3559,10 +3562,12 @@ a.blog-readmore {
 	padding: 18px;
 	border-radius: 10px;
 }
+
 #gmap iframe {
 	width: 100%;
 	height: 100%;
 }
+
 /*
 29.Page Details
 =================*/
@@ -3780,7 +3785,7 @@ footer.footer {
 	font-size: 18px;
 }
 
-.footer-row{
+.footer-row {
 	justify-content: space-between;
 }
 

@@ -30,7 +30,7 @@
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
     margin: 20px auto 0;
     border-radius: 2px;
 }
@@ -68,7 +68,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     transition: left 0.6s ease;
 }
 
@@ -124,13 +124,14 @@
     width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-    transition: all 0.4s ease;
+    /* border: 1px solid #796033; */
+    box-shadow: 20px 20px 30px #796033;
+    transition: all 0.9s ease;
 }
 
 .faq-section .vedio-inner:hover img {
-    transform: scale(1.03);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+    transform: scale(0.9);
+    box-shadow: 0 0 40px 20px #796033;
 }
 
 .faq-section .vedio-inner::before {
@@ -140,7 +141,7 @@
     left: 30px;
     right: 30px;
     bottom: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* border: 2px solid #796033; */
     border-radius: 15px;
     pointer-events: none;
 }
@@ -150,18 +151,18 @@
     .faq-section .sec-title h1 {
         font-size: 40px;
     }
-    
+
     .faq-section .faq-single {
         padding: 25px;
         margin-bottom: 20px;
     }
-    
+
     .faq-section .media-left .icon {
         width: 60px;
         height: 60px;
         margin-right: 20px;
     }
-    
+
     .faq-section .media-left .icon img {
         width: 30px;
         height: 30px;
@@ -172,31 +173,31 @@
     .faq-section .sec-title h1 {
         font-size: 32px;
     }
-    
+
     .faq-section .faq-single {
         padding: 20px;
         margin-bottom: 15px;
     }
-    
+
     .faq-section .faq-single h2 {
         font-size: 18px;
     }
-    
+
     .faq-section .faq-single p {
         font-size: 14px;
     }
-    
+
     .faq-section .media-left .icon {
         width: 50px;
         height: 50px;
         margin-right: 15px;
     }
-    
+
     .faq-section .media-left .icon img {
         width: 25px;
         height: 25px;
     }
-    
+
     .faq-section .vedio-inner {
         padding: 10px;
         margin-top: 30px;
@@ -326,7 +327,7 @@
 .gg-read-more-btn {
     margin-top: auto;
     width: 100%;
-    background-color: #003c70;
+    background-color: #796033;
     border-radius: 5px;
     padding: 14px 10px;
     text-align: center;
@@ -575,4 +576,51 @@
     font-weight: 500;
     margin: 0;
     line-height: 1.5;
+}
+
+/* ============================================
+   Footer - Custom Color Override
+   ============================================ */
+
+/* Main footer background - dark golden gradient */
+footer.footer {
+    background: linear-gradient(182.7deg, rgb(121, 96, 51), rgb(52, 50, 47)) !important;
+}
+
+/* Section heading underline bar - golden */
+.footer-sec h2::before {
+    background: linear-gradient(90deg, rgb(121, 96, 51), rgb(180, 140, 70)) !important;
+}
+
+/* Contact icon boxes - golden gradient instead of orange */
+.inner-item .icon {
+    background: linear-gradient(135deg, rgb(121, 96, 51), rgb(180, 140, 70)) !important;
+    border-color: rgb(121, 96, 51) !important;
+}
+
+/* Social media icon circles - golden gradient instead of orange */
+.footer-social-profile ul li a i {
+    background: linear-gradient(135deg, rgb(121, 96, 51), rgb(180, 140, 70)) !important;
+}
+
+.footer-social-profile ul li a i:hover {
+    background: linear-gradient(135deg, rgb(140, 110, 60), rgb(200, 160, 80)) !important;
+}
+
+/* Quick link hover - golden instead of orange */
+.footer-widget-menu li a:hover {
+    color: rgb(180, 140, 70) !important;
+}
+
+/* Footer bottom bar - deep dark as requested */
+.footer-bottom-sec {
+    background: #333333 !important;
+}
+
+/* Responsive padding tweaks */
+@media (max-width: 768px) {
+    .footer-sec {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
 }

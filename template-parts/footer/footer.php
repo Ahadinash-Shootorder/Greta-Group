@@ -7,15 +7,19 @@
                 <!-- Single Footer Widget Start -->
                 <div class="col-lg-3 col-md-6 footer-widget">
                     <div class="footer-wedget-one">
-                        <a class="footer-logo" href="index.php"><img src="img/greta-white-logo.png" alt=""/></a>
+                        <a class="footer-logo" href="index.php"><img src="img/greta-white-logo.png" alt="" /></a>
                         <p>
-Your Trusted Partner in Global Commodities and Metals.</p>
+                            Your Trusted Partner in Global Commodities and Metals.</p>
                         <div class="footer-social-profile">
                             <ul>
                                 <!-- <li><a href=""><i class="fa fa-facebook"></i></a></li> -->
                                 <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
-                                <li><a target="_blank" href="https://www.linkedin.com/company/kusum-metals-pvt-ltd-greta-group-/"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/shriramfoodsltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_blank"
+                                        href="https://www.linkedin.com/company/kusum-metals-pvt-ltd-greta-group-/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                                <li><a target="_blank"
+                                        href="https://www.instagram.com/shriramfoodsltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                            class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,7 +64,8 @@ Your Trusted Partner in Global Commodities and Metals.</p>
                                         <span class="icon"><i class="fa fa-map-marker"></i></span>
                                     </div>
                                     <div class="media-body">
-                                        <span class="inner-text">110 ANSON ROAD, 30-10 INTERNATIONAL PLAZA, SINGAPORE 079903</span>
+                                        <span class="inner-text">110 ANSON ROAD, 30-10 INTERNATIONAL PLAZA, SINGAPORE
+                                            079903</span>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +103,7 @@ Your Trusted Partner in Global Commodities and Metals.</p>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="copy-right">
-                        <p>&copy; 2025 Greta Group. All Rights Reserved.</p>
+                        <p>&copy; 2026 Greta Group. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
