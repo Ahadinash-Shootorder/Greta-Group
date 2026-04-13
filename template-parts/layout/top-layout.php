@@ -24,7 +24,7 @@
 
     <!-- Stylesheets Start -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap" rel="stylesheet"> -->
-     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
      <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
