@@ -7,10 +7,12 @@
 $page_title = "Contact Us";
 require_once('template-parts/page-title.php');
 ?>
+<div style="background-color: #faf7f2;">
+
 <?php require_once('template-parts/contact/map.php'); ?>
 <?php require_once('template-parts/contact/address.php'); ?>
 
-<div style="width:100%; max-width:800px; margin:60px auto; font-family:Arial, sans-serif;">
+<div style="width:100%; max-width:800px; margin:0 auto; padding:60px 0; font-family:Arial, sans-serif;">
 
   <h2 style="text-align:center; font-weight:500; letter-spacing:2px; margin-bottom:30px; font-size:40px;">
     Get In Touch
@@ -50,6 +52,8 @@ require_once('template-parts/page-title.php');
   </div>
 
 </form>
+
+</div>
 
 </div>
 

@@ -2,42 +2,42 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>
-        <li class="has-children-menu"><a href="#">Group of Companies</a>
-        <ul>
-             <li><a href="kusum-metals-pvt-ltd.php" target="_blank" >Kusum Metals PVT LTD</a></li>
+        <li class="has-children-menu"><a href="#">Group Companies</a>
+            <ul>
+                <li><a href="kusum-metals-pvt-ltd.php" target="_blank">Kusum Metals PVT LTD</a></li>
                 <!--<li><a href="global-metcorp-ltd.php">Global Metcorp LTD</a></li>-->
-                                <li><a href="https://www.globalmetcorp.com/" target="_blank" >Global Metcorp LTD</a></li>
-  <!--<li><a href="greta-energy-ltd.php">Greta Energy LTD</a></li>-->
-   <li><a href="https://www.gretaenergy.in/" target="_blank" >Greta Energy LTD</a></li>
-                <li><a href="greta-metal-pte-ltd.php" target="_blank" >Greta Metal PTE LTD</a></li>
-                 <!--<li><a href="shriram-food-industry-ltd.php">Shriram Food Industry LTD</a></li>-->
-                 <li><a href="https://www.shriramfood.com/" target="_blank" >Shriram Food Industry LTD</a></li>
+                <li><a href="https://www.globalmetcorp.com/" target="_blank">Global Metcorp LTD</a></li>
+                <!--<li><a href="greta-energy-ltd.php">Greta Energy LTD</a></li>-->
+                <li><a href="https://www.gretaenergy.in/" target="_blank">Greta Energy LTD</a></li>
+                <li><a href="greta-metal-pte-ltd.php" target="_blank">Greta Metal PTE LTD</a></li>
+                <!--<li><a href="shriram-food-industry-ltd.php">Shriram Food Industry LTD</a></li>-->
+                <li><a href="https://www.shriramfood.com/" target="_blank">Shriram Food Industry LTD</a></li>
                 <!--<li><a href="ardour-world-ltd.php">Global Ardour Recycling</a></li>-->
-                <li><a href="https://globalardour.co.uk/" target="_blank" >Global Ardour Recycling</a></li>
-               
-                <!-- <li><a href="pt-greta-coal.php">PT Greta Coal</a></li> -->
-                <li><a href="https://www.gretaminerals.com/" target="_blank" >Greta Minerals Australia</a></li>
+                <li><a href="https://globalardour.co.uk/" target="_blank">Global Ardour Recycling</a></li>
 
-        </ul>
-    </li>
-    <!--    <li class="has-children-menu"><a href="#">Products</a>-->
-    <!--<ul>-->
-    <!--            <li><a href="#">Ferrous Scrap</a></li>-->
-    <!--            <li><a href="#">Non-Ferrous Scrap</a></li>-->
-    <!--            <li><a href="#">Steel Billets</a></li>-->
-    <!--            <li><a href="#">Wire Rods</a></li>-->
-    <!--            <li><a href="#">Flat Products</a></li>-->
-    <!--            <li><a href="#">Chrome Ore</a></li>-->
-    <!--            <li><a href="#">Pig Iron</a></li>-->
-    <!--            <li><a href="#">Rice</a></li>-->
-                 
-    <!--        </ul>-->
-    <!-- </li>-->
+                <!-- <li><a href="pt-greta-coal.php">PT Greta Coal</a></li> -->
+                <li><a href="https://www.gretaminerals.com/" target="_blank">Greta Minerals Australia</a></li>
+
+            </ul>
+        </li>
+        <!--    <li class="has-children-menu"><a href="#">Products</a>-->
+        <!--<ul>-->
+        <!--            <li><a href="#">Ferrous Scrap</a></li>-->
+        <!--            <li><a href="#">Non-Ferrous Scrap</a></li>-->
+        <!--            <li><a href="#">Steel Billets</a></li>-->
+        <!--            <li><a href="#">Wire Rods</a></li>-->
+        <!--            <li><a href="#">Flat Products</a></li>-->
+        <!--            <li><a href="#">Chrome Ore</a></li>-->
+        <!--            <li><a href="#">Pig Iron</a></li>-->
+        <!--            <li><a href="#">Rice</a></li>-->
+
+        <!--        </ul>-->
+        <!-- </li>-->
         <li><a href="csr.php">CSR</a></li>
         <li><a href="news.php">News</a></li>
         <li><a href="careers.php">Careers</a></li>
         <li><a href="contact.php">Contact Us</a></li>
-        
+
 
         <!-- <li class="has-children-menu"><a href="service-1.php">services</a>
             <ul>
