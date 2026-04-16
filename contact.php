@@ -1,63 +1,63 @@
-
 <?php $head_title="Contact Us - Corporate & Financial Business PHP Template"?>
 <?php require_once('template-parts/layout/top-layout.php'); ?>
+
+<!-- Include the new Modern Blue Layout CSS -->
+<link rel="stylesheet" href="css/contact-custom.css">
+
 <?php require_once('template-parts/header/header.php'); ?>
 
 <?php
 $page_title = "Contact Us";
 require_once('template-parts/page-title.php');
 ?>
-<div style="background-color: #faf7f2;">
 
-<?php require_once('template-parts/contact/map.php'); ?>
-<?php require_once('template-parts/contact/address.php'); ?>
+<main class="contact-page-wrapper">
+    <div class="contacts-container">
+        
+        <!-- Top Section: Modern Blue Contact Cards -->
+        <?php require_once('template-parts/contact/address.php'); ?>
 
-<div style="width:100%; max-width:800px; margin:0 auto; padding:60px 0; font-family:Arial, sans-serif;">
+        <!-- Bottom Section: Split Layout (Form & Map) -->
+        <div class="contact-split-section">
+            
+            <!-- Left Column: Clean White Form -->
+            <div class="modern-form-box">
+                <h2>Get In Touch</h2>
+                
+                <form action="send-mail.php" method="POST" enctype="multipart/form-data">
+                    <div class="modern-input-row">
+                        <div class="modern-form-group">
+                            <input type="text" name="name" placeholder="Name" class="modern-input" required>
+                        </div>
+                        <div class="modern-form-group">
+                            <input type="email" name="email" placeholder="Email" class="modern-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="modern-form-group">
+                        <input type="text" name="mobile" placeholder="Mobile Number" class="modern-input">
+                    </div>
+                    
+                    <div class="modern-form-group">
+                        <textarea name="message" placeholder="Message" class="modern-input modern-textarea"></textarea>
+                    </div>
 
-  <h2 style="text-align:center; font-weight:500; letter-spacing:2px; margin-bottom:30px; font-size:40px;">
-    Get In Touch
-  </h2>
+                    <div style="margin-top:10px;">
+                        <button type="submit" class="modern-submit-btn">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
 
-  <hr style="border:0; border-top:1px solid #ccc; margin-bottom:40px;">
+            <!-- Right Column: Modern Map Box -->
+            <div class="modern-map-box">
+                <?php require_once('template-parts/contact/map.php'); ?>
+            </div>
 
- <form action="send-mail.php" method="POST" enctype="multipart/form-data">
-
-  <div style="display:flex; gap:30px; margin-bottom:25px;">
-    <input type="text" name="name" placeholder="Name*" required
-      style="width:33.33%; padding:16px; border:1px solid #ccc;"> 
-    
-    <input type="email" name="email" placeholder="Email*" required
-      style="width:33.33%; padding:16px; border:1px solid #ccc;">
-      
-       <input type="text" name="mobile" placeholder="Mobile Number"
-      style="width:33.33%; padding:16px; border:1px solid #ccc;">
-    
-  </div>
-
-  <div style="display:flex; gap:30px; margin-bottom:25px;">
-   <input type="text" name="message" placeholder="Message"
-      style="width:100%; padding:60px 16px; border:1px solid #ccc;">
-  </div>
-
-  <!--<div style="display:flex; align-items:center; margin-bottom:10px;">-->
-  <!--  <input type="file" name="resume" required-->
-  <!--    style="flex:1; padding:14px; border:1px solid #ccc;">-->
-  <!--</div>-->
-
-  <div style="margin-top:30px;">
-    <button type="submit"
-      style="background:#0047ab; color:#fff; padding:14px 40px; border:none;">
-      Submit
-    </button>
-  </div>
-
-</form>
-
-</div>
-
-</div>
-
-
+        </div>
+    </div>
+</main>
 
 <?php require_once('template-parts/footer/footer.php'); ?>
 <?php require_once('template-parts/layout/bottom-layout.php'); ?>
